@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+env/
+.venv/
+build/
+dist/
+release/
+*.spec
+.pytest_cache/
+.idea/
+.vscode/
+.claude/
+data/
+*.log
+*.out
+*.err
