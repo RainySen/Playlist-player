@@ -60,6 +60,15 @@ python app.py
 
 Los datos (biblioteca, ajustes, caché de yt-dlp y registro) se guardan en la carpeta `data/`, que se crea sola y no se versiona.
 
+## Generar el .exe y el instalador
+
+```powershell
+pip install pyinstaller pefile
+.\build-release.ps1
+```
+
+Genera la carpeta `release\PlaylistPlayer\` (con `PlaylistPlayer.exe`) y, si [Inno Setup 6](https://jrsoftware.org/isinfo.php) está instalado (`winget install JRSoftware.InnoSetup`), el instalador `release\PlaylistPlayer-Setup-<versión>.exe`. La versión se lee de `version_info.txt`. El instalador descarga e instala VLC de 64 bits si no lo encuentra.
+
 ## Arquitectura
 
 ```
